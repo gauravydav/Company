@@ -1,0 +1,119 @@
+.student-card {
+  background: #4c4661; /* Background color */
+  color: white;
+  border-radius: 5px; /* Adjust the border radius to your preference */
+  padding: 10px;
+  width: 200px; /* Reduce card width */
+  box-shadow: 0px 2px 4px gray; /* Adjust the box shadow */
+  display: inline-block; /* Display cards in a row */
+  margin: 10px; /* Add spacing between cards */
+  position: relative; /* Add relative positioning for child elements */
+}
+
+.actions {
+  bottom: 10px; /* Move the edit and delete buttons to the bottom */
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-button,
+.delete-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.edit-button {
+  color: #007bff;
+  align-self: flex-start; /* Move the edit button to the bottom-left */
+}
+
+.delete-button {
+  color: #dc3545;
+  align-self: flex-end; /* Move the delete button to the bottom-right */
+}
+.right-corner {
+  top: 10px;
+  right: 10px;
+  background-color: #007bff; /* You can change the background color as desired */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.right-corner:hover {
+  background-color: #0056b3; /* Change the color on hover */
+} /* Add this to your Student.css file or create a CSS file if not already present */
+.header_student {
+  display: flex;
+  background-color: #007bff;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.left-end {
+  float: left;
+}
+
+.right-end {
+  float: right;
+}
+
+.create-student-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.create-student-button:hover {
+  background-color: #0056b3;
+}
+/* Student.css */
+
+.create-student-form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
+
+.popup-content button.cancel {
+  background-color: #ccc;
+}
+
+.popup-content button.cancel:hover {
+  background-color: #999;
+}
